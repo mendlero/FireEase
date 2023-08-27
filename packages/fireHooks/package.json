@@ -1,0 +1,24 @@
+{
+  "name": "fire-hooks",
+  "version": "1.0.0",
+  "description": "firebase hooks forr react and nextjs",
+  "main": "dist/index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mendlero/FireEase.git"
+  },
+  "keywords": [
+    "firebase",
+    "react",
+    "next",
+    "nextjs"
+  ],
+  "author": "mendlero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mendlero/FireEase/issues"
+  },
+  "homepage": "https://github.com/mendlero/FireEase#readme"
+}
