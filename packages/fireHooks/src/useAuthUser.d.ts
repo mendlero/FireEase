@@ -1,2 +1,2 @@
-import { Auth, User } from 'firebase/auth';
+import type { Auth, User } from 'firebase/auth';
 export default function useAuthUser(auth: Auth): User | null;

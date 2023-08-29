@@ -1,5 +1,5 @@
-import { Auth, User } from 'firebase/auth';
-import { ReactNode } from 'react';
+import type { Auth, User } from 'firebase/auth';
+import type { ReactNode } from 'react';
 
 export function AuthUserProvider({
   children,
@@ -9,4 +9,4 @@ export function AuthUserProvider({
   auth: Auth;
 }): React.JSX.Element;
 
-export const useAuthContext = () => User | null;
+export function useAuthContext(): User | null;
