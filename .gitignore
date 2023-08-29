@@ -16,6 +16,9 @@ package-lock.json
 # Editor config
 .vscode
 
+#output files
+dist
+
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 

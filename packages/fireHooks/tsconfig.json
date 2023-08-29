@@ -5,15 +5,17 @@
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "rootDir": "src",
+    "outDir": "dist",
+    "declaration": true,
+    "sourceMap": true
   },
   "include": ["./src/**/*.ts", "./src/**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist", "./src/*.d.ts"]
 }
