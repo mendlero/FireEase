@@ -1,6 +1,6 @@
 {
   "name": "fire-react-hooks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "firebase hooks forr react and nextjs",
   "main": "dist/index.js",
   "files": [

@@ -1,0 +1,1 @@
+This npm package provides useful hooks for firebase/
