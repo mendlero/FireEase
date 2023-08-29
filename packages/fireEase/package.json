@@ -1,0 +1,30 @@
+{
+  "name": "fire-ease",
+  "version": "0.0.1",
+  "description": "firebase made easy with fire-ease",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "20.4.8",
+    "@types/react": "18.2.18",
+    "typescript": "^5.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mendlero/FireEase.git"
+  },
+  "keywords": [
+    "firebase"
+  ],
+  "author": "mendlero",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mendlero/FireEase/issues"
+  },
+  "homepage": "https://github.com/mendlero/FireEase#readme"
+}
