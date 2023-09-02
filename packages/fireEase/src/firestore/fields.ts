@@ -10,8 +10,11 @@ export enum FieldTypes {
   refrence = 9,
 }
 
-export type Field = {
+export type FieldProps = {
   type: FieldTypes;
+};
+
+export type Field = FieldProps & {
   name: string;
 };
 
