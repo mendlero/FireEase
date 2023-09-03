@@ -10,6 +10,12 @@ export enum FieldTypes {
   refrence = 9,
 }
 
+export enum RelationalFieldTypes {
+  oneToOne = 1,
+  oneToMany = 2,
+  manyToMany = 3,
+}
+
 export type FieldProps = {
   type: FieldTypes;
 };
@@ -17,6 +23,19 @@ export type FieldProps = {
 export type Field = FieldProps & {
   name: string;
 };
+
+export type RelationalFieldProps = {
+  type: RelationalFieldTypes;
+};
+
+export type RelationalField = RelationalFieldProps & {
+  name: string;
+};
+
+export type FieldsInput = Field[] | { [k: string]: FieldProps };
+export type RelationalFieldsInput =
+  | RelationalField[]
+  | { [k: string]: RelationalFieldProps };
 
 function FieldFunctionByType(type: FieldTypes): (name: string) => Field {
   return (name: string) => {
