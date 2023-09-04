@@ -1,2 +1,2 @@
-# NextFire
-the nextFire source code
+## FireEase
+The javascript library and cli for firebase
