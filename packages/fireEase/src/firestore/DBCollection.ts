@@ -1,10 +1,13 @@
 import { FieldProps, RelationalFieldProps } from './fields';
-import { GenericFieldInput } from './genericFields';
+import { GenericFieldsInput } from './genericFields';
 
-class DBCollection {
-  collectionLocation: string = '';
-  autoId: boolean = false;
+export interface DBCollection extends DBCollectionFields {
+  extends?: DBCollectionFields | DBCollectionFields[];
+  collectionLocation: string;
+  autoId: boolean;
+}
 
-  fields: GenericFieldInput<FieldProps> = {};
-  relationalField: GenericFieldInput<RelationalFieldProps> = {};
+export interface DBCollectionFields {
+  fields: GenericFieldsInput<FieldProps>;
+  relationalField?: GenericFieldsInput<RelationalFieldProps>;
 }

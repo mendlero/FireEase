@@ -1,5 +1,3 @@
-import { GenericField } from './genericFields';
-
 export enum FieldTypes {
   string = 1,
   number = 2,
@@ -26,11 +24,9 @@ export type RelationalFieldProps = {
   type: RelationalFieldTypes;
 };
 
-function FieldFunctionByType(
-  type: FieldTypes
-): (name: string) => GenericField<FieldProps> {
-  return (name: string) => {
-    return { type: type, name: name };
+function FieldFunctionByType(type: FieldTypes): () => FieldProps {
+  return () => {
+    return { type: type };
   };
 }
 
