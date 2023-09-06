@@ -1,3 +1,6 @@
+# taken from the vercel/nextjs repo on github and is under MIT license
+# regurdless of the license of the current repo (mendlero/FireEase on github).
+
 body:
   - type: textarea
     attributes:
