@@ -1,6 +1,6 @@
 {
   "name": "fire-react-hooks",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "firebase hooks for react and nextjs",
   "main": "dist/index.js",
   "files": [
@@ -20,7 +20,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mendlero/FireEase.git"
+    "url": "https://github.com/mendlero/FireEase.git",
+    "directory": "packages/fireHooks"
   },
   "keywords": [
     "firebase",

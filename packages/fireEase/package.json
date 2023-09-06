@@ -1,6 +1,6 @@
 {
   "name": "fire-ease",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "firebase made easy with fire-ease",
   "main": "dist/index.js",
   "files": [
@@ -15,7 +15,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mendlero/FireEase.git"
+    "url": "https://github.com/mendlero/FireEase.git",
+    "directory": "packages/fireEase"
   },
   "keywords": [
     "firebase"
