@@ -1,10 +1,6 @@
-import { DBCollectionFields } from '../DBCollection';
-import { BooleanField, StringField } from '../fields';
+import { DBCollectionExtension } from '../DBCollection';
+import baseUserExtension from './baseUserExtension';
 
-export default class UserCollection implements DBCollectionFields {
-  fields = {
-    email: StringField(),
-    displayName: StringField(),
-    emailVerified: BooleanField(),
-  };
-}
+const userCollection = new DBCollectionExtension({}, baseUserExtension);
+
+export default userCollection;
