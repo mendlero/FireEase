@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 try {
   require.resolve('firebase');
 } catch (e) {
