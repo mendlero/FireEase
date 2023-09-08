@@ -24,6 +24,9 @@ export type RelationalFieldProps = {
   type: RelationalFieldTypes;
 };
 
+export type FieldsInput = Record<string, FieldProps>;
+export type RelationalFieldsInput = Record<string, RelationalFieldProps>;
+
 function FieldFunctionByType(type: FieldTypes): () => FieldProps {
   return () => {
     return { type: type };

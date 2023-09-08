@@ -1,8 +1,4 @@
-import { FieldProps, RelationalFieldProps } from './fields';
-import { GenericFieldsInput } from './genericFields';
-
-type FieldsInput = GenericFieldsInput<FieldProps>;
-type RelationalFieldsInput = GenericFieldsInput<RelationalFieldProps>;
+import { FieldsInput, RelationalFieldsInput } from './fields';
 
 class DBCollectionFields {
   constructor(
