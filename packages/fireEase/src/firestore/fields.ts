@@ -1,31 +1,20 @@
 export enum FieldTypes {
-  string = 1,
-  number = 2,
-  boolean = 3,
-  map = 4,
-  array = 5,
-  null = 6,
-  timestamp = 7,
-  geopoint = 8,
-  refrence = 9,
-}
-
-export enum RelationalFieldTypes {
-  oneToOne = 1,
-  oneToMany = 2,
-  manyToMany = 3,
+  string,
+  number,
+  boolean,
+  map,
+  array,
+  null,
+  timestamp,
+  geopoint,
+  refrence,
 }
 
 export type FieldProps = {
   type: FieldTypes;
 };
 
-export type RelationalFieldProps = {
-  type: RelationalFieldTypes;
-};
-
 export type FieldsInput = Record<string, FieldProps>;
-export type RelationalFieldsInput = Record<string, RelationalFieldProps>;
 
 function FieldFunctionByType(type: FieldTypes): () => FieldProps {
   return () => {

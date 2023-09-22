@@ -1,14 +1,13 @@
-import { FieldsInput, RelationalFieldsInput } from './fields';
+import { FieldsInput } from './fields';
 
 class DBCollectionFields {
   constructor(
     public fields: FieldsInput = {},
-    extend?: DBCollectionFields | DBCollectionFields[],
-    public relationalField: RelationalFieldsInput = {}
+    extend?: DBCollectionFields | DBCollectionFields[]
   ) {
     if (extend) {
       if (Array.isArray(extend)) {
-        extend.forEach((CollectionFields) => {
+        extend.forEach(CollectionFields => {
           this.extendWith(CollectionFields);
         });
       } else {
@@ -21,10 +20,6 @@ class DBCollectionFields {
     if (extend.fields) {
       this.addFields(extend.fields);
     }
-
-    if (extend.relationalField) {
-      this.addRelationalFields(extend.relationalField);
-    }
   }
 
   addFields(fields: FieldsInput) {
@@ -35,15 +30,6 @@ class DBCollectionFields {
       }
     });
   }
-
-  addRelationalFields(fields: RelationalFieldsInput) {
-    const exsistingRelationalFields = Object.keys(this.relationalField);
-    Object.entries(fields).forEach(([k, v]) => {
-      if (!(k in exsistingRelationalFields)) {
-        this.relationalField[k] = v;
-      }
-    });
-  }
 }
 
 export class DBCollection extends DBCollectionFields {
@@ -51,10 +37,9 @@ export class DBCollection extends DBCollectionFields {
     public collectionLocation: string,
     public autoId: boolean = false,
     fields: FieldsInput = {},
-    extend?: DBCollectionFields | DBCollectionFields[],
-    relationalField: RelationalFieldsInput = {}
+    extend?: DBCollectionFields | DBCollectionFields[]
   ) {
-    super(fields, extend, relationalField);
+    super(fields, extend);
   }
 }
 
